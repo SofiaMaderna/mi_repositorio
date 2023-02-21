@@ -5,37 +5,6 @@
     margin:0;
     padding:0;
 }
-/*BARRA DE NAVEGACION*/
-header{
-    background-color: #1b1b1a;
-    color: aliceblue;
-    padding: 0px 10px 0px 0px;
-    border-bottom: solid 4px white;
-}
-.logobarra{
-height: 70px;
-width: 170px;
-}
-.logoface{
-    height: 32px;
-    width: 32px;
-}
-.logoinsta{
-    height: 39px;
-    width: 39px;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-ul li{
-    list-style-type:none;
-}
-a{
-    text-decoration: none;
-    color:aliceblue;
-}
 
 /*CUERPO*/
 body{
@@ -62,90 +31,153 @@ h2{
     margin: 0px;
 }
 
-/*PIE DE PAGINA*/
-.horario{
-    width: 86%;
-    height: 90%;
-    grid-area: horario;
-    color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #7caa9b;
-    border-left: 50px solid white;
-} 
-
-.mapa{
-    grid-area: mapa;
-    color: aliceblue;
-}
-
-footer{
-    height: auto;
-    display: grid;
-    grid-template-areas:
-    "horario mapa"
-    "enlace mapa";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% auto;
-    background-color:#1b1b1a;
-    text-align: center;
-    border-top: 20px solid;
-    border-bottom: 20px solid;
-    border-left: 30px solid black;
-    padding-top: 20px;
-    border-right: 30px solid black;
-}
-
-.enlace{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.enlace div{
-    height: 32px;
-    border: solid 20px #7caa9b;
-    border-left: solid 20px aliceblue;
-    padding: 20px;
-    color: aliceblue;
-    padding-bottom: 80px;
-}
-
-footer h2{
-    color: aliceblue;
-}
-footer section{
-    color: aliceblue;
-}
-
 /*INICIO*/
-
-.imagenIni{
-grid-area: imagenIni;
-height: 100%;
-width: 100%;
+.inicio {
+    height: auto;
 }
-.imagenIni img{
+
+.imagenIni {
+    width: auto;
+}
+
+.imagenIni img {
+    height: auto;
+    width: 100%;
+}
+
+.novedades {
+    text-align: center;
+    width: auto;
+}
+
+.novedades h2 {
+    background-color: #7caa9b;
+    color: white;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.novedades div h3 {
+    color: black;
+}
+
+.novedades div {
     height: 100%;
-    width: 96%;
-}
-
-.carril{
-    grid-area: carril;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #bf9780;
+    text-align: left;
+    border: solid 5px black;
+    padding-left: 5px;
 }
 
-.novedades{
-grid-area: novedades;
-text-align: center;
+.novedades div p {
+    color: black;
+    font-weight: bolder;
+    font-weight: 800;
+    font-size: larger;
+    width: auto;
 }
+
+.novedades img {
+    width: auto;
+    height: 400px;
+}
+
+.sugerencias h2 {
+    color: white;
+    text-align: center;
+    background-color: #a68069;
+    padding: 20px;
+    border: solid 10px black;
+    width: auto;
+}
+
+/*PRODUCTOS*/
+
+.productos img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+.grilla div figcaption{
+    background-color: #1b1b1a;
+    width: 450px;
+    color: white;
+}
+.grilla div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: black;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+
+
+
+@media screen and (min-width:992px) {
+
+    /*BARRA DE NAVEGACION*/
+    header {
+        background-color: #1b1b1a;
+        color: aliceblue;
+        padding: 0px 10px 0px 0px;
+        border-bottom: solid 4px white;
+        width: auto;
+    }
+
+    .logobarra {
+        height: 70px;
+        width: 170px;
+    }
+
+    .logoface {
+        height: 32px;
+        width: 32px;
+    }
+
+    .logoinsta {
+        height: 39px;
+        width: 39px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: auto;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .imagenIni{
+        grid-area: imagenIni;
+        height: 100%;
+        width: 100%;
+    }
+    .imagenIni img{
+        height: 100%;
+        width: 96%;
+    }
+
+    .novedades{
+        grid-area: novedades;
+        text-align: center;
+        height: auto;
+    }
 .novedades h2{
     background-color: #7caa9b;
     color: white;
@@ -157,7 +189,7 @@ color: black;
 }
 
 .novedades div{
-height: 100%;
+height: auto;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -181,8 +213,30 @@ font-size: larger;
 .sugerencias{
 grid-area: sugerencias;
 padding-bottom: 20px;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-
+.sugerencias1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d8af97;
+    border: 10px solid #1b1b1a;
+}
+.sugerenciasTitulo{
+    width: 100%;
+}
+.carousel-item-tips{
+    border: 15px solid whitesmoke;
+}
+.carousel-item-tips img{
+    height: 500px;
+}
+ 
 .inicio{
     height: auto;
     display: grid;
@@ -200,52 +254,6 @@ padding-bottom: 20px;
     padding: 20px;
     border: solid 10px black;
 }
-.sugerencias1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.sugerencias1 div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 400px;
-    width: 600px;
-}
-.sugerenciasVerano{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-    overflow-x: scroll;
-    background-color: black;
-    scroll-snap-type: mandatory;
-}
-.sugerenciasVerano img{
-    width: 100%;
-    height: 100%;
-}
-
-.sugerenciasRulos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-    overflow-x: scroll;
-    background-color: black;
-    scroll-snap-type: mandatory;
-}
-.sugerenciasRulos img{
-    width: 100%;
-    height: 100%;
-}
 
 
 /*NOSOTRAS*/
@@ -254,23 +262,25 @@ border-top: solid 2px  #1b1b1a;
 }
 
 /*PRODUCTOS*/
+
 .grilla div:hover figcaption{
     display: block;
 }
-div figcaption{
+.grilla div figcaption{
     display: none;
     position: absolute;
     top: 40%;
     text-align: center;
     background-color: white;
     color: black;
+    width: 80%;
 }
 .productos{
     border-top: solid 2px  #1b1b1a;
-    padding-left: 40px;
+    height: auto;
 }
 .grilla{
-    height: 1700px;
+    height: auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 25% 25% 25% auto;
@@ -279,8 +289,8 @@ div figcaption{
 }
 
 .grilla div{
-    height: 350px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -291,10 +301,10 @@ div figcaption{
 .grilla section{
     font-weight: bold;
 }
-.imagen{
-    height: 100%;
-    width: 100%;
-    border-radius: 30px;
+.productos img {
+    height: 330px;
+    width: 330px;
+    border-radius: 10px;
 }
 .imagen:hover {
     filter: opacity(.4);
@@ -352,7 +362,4 @@ padding: 5px;
 width: 450px;
 height: 40px;
 }
-
-@media screen and (max-width: 576px){
-    
 }
