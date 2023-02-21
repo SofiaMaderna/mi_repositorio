@@ -10,34 +10,32 @@
     <title>SIGMA | AGENDA</title>
 </head>
 <body>
-    <header> 
-        <nav>
-            <ul>
-                <li>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #1b1b1a;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
                     <img class="logobarra" src="../img/logobarra.jpg" alt="logo-sigma">
-                </li>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="./nosotras.html">NOSOTRAS</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./agenda.html">AGENDA</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/people/Sigma-Estilistas/100063691653375/" target="_blank"><img class="logoface" src="../img/logoface.png" alt="logo-face"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/sigmaestilistas/?hl=es" target="_blank"><img class="logoinsta" src="../img/logoinsta.png" alt="logo-insta"></a>
-                </li>
-            </ul>
+                </a>
+                <button class="navbar-toggler" style="background-color: aliceblue;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class=" nav navbar-nav  nav-fill w-100">
+                        <a class="nav-link active" style="color: aliceblue;" aria-current="page"
+                            href="../index.html">HOME</a>
+                        <a class="nav-link" style="color: aliceblue; " href="./nosotras.html">NOSOTRAS</a>
+                        <a class="nav-link" style="color: aliceblue; " href="./servicios.html">SERVICIOS</a>
+                        <a class="nav-link" style="color: aliceblue; " href="./productos.html">PRODUCTOS</a>
+                        <a class="nav-link" style="color: aliceblue; " href="./agenda.html">AGENDA</a>
+                        <a class="nav-link" href="https://www.facebook.com/people/Sigma-Estilistas/100063691653375/"
+                            target="_blank"><img class="logoface" src="../img/logoface.png" alt="logo-face"></a>
+                        <a class="nav-link" href="https://www.instagram.com/sigmaestilistas/?hl=es" target="_blank"><img
+                                class="logoinsta" src="../img/logoinsta.png" alt="logo-insta"></a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="agenda">
@@ -106,35 +104,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 <footer>
-    <div class="horario">
-        <ul>
-            <img src="../img/logoReloj.png" alt="logoReloj">
-            <h2>Horario</h2>
-            <div>Lunes a Sabados de 10hs a 19hs</div>
-        </ul>
-        <ul>
-            <img src="../img/logoTelefono.png" alt="logoTelefono">
-            <h2>Telefono</h2>
-            <div>2604.2005</div>
-        </ul>
-    </div>
-    <div class="enlace">
-        <div class="enlaceFace">
-            <a href="https://www.facebook.com/people/Sigma-Estilistas/100063691653375/" target="_blank"><img class="logoface" src="../img/logoface.png" alt="logo-face"></a>
-            <h3>Facebook</h3>
+    <div class="container-fluid;">
+        <div class="row p-5 text-white" style="background-color: black;">
+            <div class="col-xs-12 col-md-6 col-lg-3"
+                style="background-color: #7caa9b; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <div>
+                    <img style="height: 50px; width: 50px;" src="../img/logoReloj.png" alt="logoReloj">
+                </div>
+                <p class="h3">HORARIO</p>
+                <p>Lunes a Sabados de 10hs a 19hs</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3"
+                style="background-color: #7caa9b; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <div>
+                    <img style="height: 55px; width: 55px;" src="../img/logoTelefono.png" alt="logoTelefono">
+                </div>
+                <p class="h4" style="padding-top: 5px;">Telefono</p>
+                <p>2604.2005</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3"
+                style=" background-color: #1b1b1a; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <p class="h3">Enlaces</p>
+                <div>
+                    <a href="https://www.facebook.com/people/Sigma-Estilistas/100063691653375/" target="_blank"><img
+                            class="logoface" src="../img/logoface.png" alt="logo-face"></a>
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/sigmaestilistas/?hl=es" target="_blank"><img class="logoinsta"
+                            src="../img/logoinsta.png" alt="logo-insta"></a>
+                    <p>Instagram</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3" style="background-color: #1b1b1a;">
+                <p class="h4" style="text-align: center;">MAPA</p>
+                <div style="display: flex; justify-content: center;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6664323360533!2d-56.05787398543027!3d-34.889721680192615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f866f03a763df%3A0xf4f4bb32d84b58d6!2sPeluquer%C3%ADa%20Sigma%20Estilistas%20Carrasco!5e0!3m2!1ses!2suy!4v1675895809285!5m2!1ses!2suy"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p style="text-align: center;">Dirección: Rostand 1554</p>
+            </div>
         </div>
-        <div class="enlaceInsta">
-            <a href="https://www.instagram.com/sigmaestilistas/?hl=es" target="_blank"><img class="logoinsta" src="../img/logoinsta.png" alt="logo-insta"></a>
-            <h3>Instagram</h3>
-        </div>
-    </div>
-    <div class="mapa">
-        <ul>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6664323360533!2d-56.05787398543027!3d-34.889721680192615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f866f03a763df%3A0xf4f4bb32d84b58d6!2sPeluquer%C3%ADa%20Sigma%20Estilistas%20Carrasco!5e0!3m2!1ses!2suy!4v1675895809285!5m2!1ses!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </ul>
-        <ul>
-            <h3>Dirección: Rostand 1554</h3>
-        </ul>
     </div>
 </footer>
 </html>
