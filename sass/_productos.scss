@@ -1,0 +1,24 @@
+.productos {
+	img {
+		height: 400px;
+		width: 400px;
+		border-radius: 10px;
+	}
+}
+.grilla {
+	div {
+		figcaption {
+			background-color: $background-color_5;
+			width: 450px;
+			color: $color_2;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: justify;
+		color: $color_1;
+		padding-bottom: 20px;
+		font-size: larger;
+	}
+}

@@ -1,12 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Cabin&family=Signika&display=swap";
-/*CUERPO*/
-/*INICIO*/
-/*PRODUCTOS*/
-/*BARRA DE NAVEGACION*/
-/*NOSOTRAS*/
-/*PRODUCTOS*/
-/*SERVICIOS*/
-/*AGENDA*/
+@import "https://fonts.googleapis.com/css2?family=Cabin&family=Signika&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -89,28 +82,6 @@ body h2 {
   padding: 20px;
   border: solid 10px black;
   width: auto;
-}
-
-.productos img {
-  height: 400px;
-  width: 400px;
-  border-radius: 10px;
-}
-
-.grilla div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  color: black;
-  padding-bottom: 20px;
-  font-size: larger;
-}
-.grilla div figcaption {
-  background-color: #1b1b1a;
-  width: 450px;
-  color: white;
 }
 
 .Servicios h2 {

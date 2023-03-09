@@ -11,14 +11,7 @@ $background-color_6: #d8af97;
 $background-color_7: white;
 
 @import "https://fonts.googleapis.com/css2?family=Cabin&family=Signika&display=swap";
-/*CUERPO*/
-/*INICIO*/
-/*PRODUCTOS*/
-/*BARRA DE NAVEGACION*/
-/*NOSOTRAS*/
-/*PRODUCTOS*/
-/*SERVICIOS*/
-/*AGENDA*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -99,60 +92,8 @@ body {
 		width: auto;
 	}
 }
-.productos {
-	img {
-		height: 400px;
-		width: 400px;
-		border-radius: 10px;
-	}
-}
-.grilla {
-	div {
-		figcaption {
-			background-color: $background-color_5;
-			width: 450px;
-			color: $color_2;
-		}
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: justify;
-		color: $color_1;
-		padding-bottom: 20px;
-		font-size: larger;
-	}
-}
 
-.Servicios{
-    h2{
-        text-align: center;
-        background-color: $background-color_3;
-        padding: 10px;
-        border: solid $background-color_5 10px ;
-        color: $background-color_5;
-        font-weight: 750;
-    }
-}
-.Servicios1{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: solid 20px $background-color_5 ;
-    border: solid 20px $background-color_5;
-    div{
-        width: 50%;
-        height: auto;
-        display: flex;
-		list-style-type: none;
-		flex-direction: column;
-		align-items: center;
-        text-align: center;
-        justify-content: center;
-		background-color: $background-color_5;
-		color: $background-color_1;
-	}
-}
-
+@import "servicios";
 
 .PeinadosImg{
     img{
