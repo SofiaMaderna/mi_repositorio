@@ -1,186 +1,3 @@
-<<<<<<< Updated upstream
-/* selector:etiqueta, class, id */
-/* propiedad: valor */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Signika&display=swap');
-*{
-    margin:0;
-    padding:0;
-}
-
-/*CUERPO*/
-body{
-    background-color:  #faf1D6;
-    font-family:'Cabin', sans-serif;
-    color: black;
-    font-weight:normal; 
-    font-style: normal;
-}
-
-h1{
-    color: black;
-    padding: 40px;
-    text-align: center;
-    margin: 80px 40px 80px 40px;
-    border: 20px solid black;
-    font-weight: 300;
-}
-h3{
-    font-size: 20px;
-}
-
-h2{
-    margin: 0px;
-}
-
-/*INICIO*/
-.inicio {
-    height: auto;
-}
-
-.imagenIni {
-    width: auto;
-}
-
-.imagenIni img {
-    height: auto;
-    width: 100%;
-}
-
-.novedades {
-    text-align: center;
-    width: auto;
-}
-
-.novedades h2 {
-    background-color: #7caa9b;
-    color: white;
-    border: 5px solid black;
-    padding: 5px;
-}
-
-.novedades div h3 {
-    color: black;
-}
-
-.novedades div {
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    background-color: #bf9780;
-    text-align: left;
-    border: solid 5px black;
-    padding-left: 5px;
-}
-
-.novedades div p {
-    color: black;
-    font-weight: bolder;
-    font-weight: 800;
-    font-size: larger;
-    width: auto;
-}
-
-.novedades img {
-    width: auto;
-    height: 400px;
-}
-
-.sugerencias h2 {
-    color: white;
-    text-align: center;
-    background-color: #a68069;
-    padding: 20px;
-    border: solid 10px black;
-    width: auto;
-}
-
-/*PRODUCTOS*/
-
-.productos img{
-    height: 400px;
-    width: 400px;
-    border-radius: 10px;
-}
-.grilla div figcaption{
-    background-color: #1b1b1a;
-    width: 450px;
-    color: white;
-}
-.grilla div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    color: black;
-    padding-bottom: 20px;
-    font-size: larger;
-}
-
-
-
-@media screen and (min-width:992px) {
-
-    /*BARRA DE NAVEGACION*/
-    header {
-        background-color: #1b1b1a;
-        color: aliceblue;
-        padding: 0px 10px 0px 0px;
-        border-bottom: solid 4px white;
-        width: auto;
-    }
-
-    .logobarra {
-        height: 70px;
-        width: 170px;
-    }
-
-    .logoface {
-        height: 32px;
-        width: 32px;
-    }
-
-    .logoinsta {
-        height: 39px;
-        width: 39px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: auto;
-    }
-
-    ul li {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: aliceblue;
-    }
-
-    .imagenIni{
-        grid-area: imagenIni;
-        height: 100%;
-        width: 100%;
-    }
-    .imagenIni img{
-        height: 100%;
-        width: 96%;
-    }
-
-    .novedades{
-        grid-area: novedades;
-        text-align: center;
-        height: auto;
-    }
-.novedades h2{
-=======
 @import "https://fonts.googleapis.com/css2?family=Cabin&family=Signika&display=swap";
 /*CUERPO*/
 /*INICIO*/
@@ -385,100 +202,10 @@ body h2 {
     height: auto;
   }
   .novedades h2 {
->>>>>>> Stashed changes
     background-color: #7caa9b;
     color: white;
     border: 5px solid black;
     padding: 5px;
-<<<<<<< Updated upstream
-}
-.novedades div h3{
-color: black;
-}
-
-.novedades div{
-height: auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-background-color: #bf9780;
-text-align: center;
-border: solid 5px black;
-padding-left: 5px;
-}
-.novedades div p{
-color: black;
-font-weight: bolder;
-font-weight: 800;
-font-size: larger;
-}
-
-.novedades img{
-    width: 55%;
-    height: 100%;
-}
-.sugerencias{
-grid-area: sugerencias;
-padding-bottom: 20px;
-height: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.sugerencias1{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #d8af97;
-    border: 10px solid #1b1b1a;
-}
-.sugerenciasTitulo{
-    width: 100%;
-}
-.carousel-item-tips{
-    border: 15px solid whitesmoke;
-}
-.carousel-item-tips img{
-    height: 500px;
-}
- 
-.inicio{
-    height: auto;
-    display: grid;
-    grid-template-areas: 
-    "carril carril"
-    "imagenIni novedades"
-    "sugerencias sugerencias";
-    grid-template-columns: 45% auto;
-    grid-template-rows: 1fr auto auto;
-}
-.sugerencias h2{
-    color: white;
-    text-align: center;
-    background-color: #a68069;
-    padding: 20px;
-    border: solid 10px black;
-}
-
-
-/*NOSOTRAS*/
-.nosotras{
-border-top: solid 2px  #1b1b1a;
-}
-
-/*PRODUCTOS*/
-
-.grilla div:hover figcaption{
-    display: block;
-}
-.grilla div figcaption{
-    display: none;
-    position: absolute;
-    top: 40%;
-=======
   }
   .novedades div {
     height: auto;
@@ -487,22 +214,12 @@ border-top: solid 2px  #1b1b1a;
     align-items: center;
     justify-content: center;
     background-color: #bf9780;
->>>>>>> Stashed changes
     text-align: center;
     border: solid 5px black;
     padding-left: 5px;
   }
   .novedades div h3 {
     color: black;
-<<<<<<< Updated upstream
-    width: 80%;
-}
-.productos{
-    border-top: solid 2px  #1b1b1a;
-    height: auto;
-}
-.grilla{
-=======
   }
   .novedades div p {
     color: black;
@@ -561,21 +278,14 @@ border-top: solid 2px  #1b1b1a;
     border-top: solid 2px #1b1b1a;
   }
   .grilla {
->>>>>>> Stashed changes
     height: auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 25% 25% 25% auto;
     gap: 10px;
     padding-bottom: solid 10px;
-<<<<<<< Updated upstream
-}
-
-.grilla div{
-=======
   }
   .grilla div {
->>>>>>> Stashed changes
     height: 100%;
     width: 100%;
     display: flex;
@@ -599,26 +309,6 @@ border-top: solid 2px  #1b1b1a;
   }
   .grilla section {
     font-weight: bold;
-<<<<<<< Updated upstream
-}
-.productos img {
-    height: 330px;
-    width: 330px;
-    border-radius: 10px;
-}
-.imagen:hover {
-    filter: opacity(.4);
-}
-
-/*SERVICIOS*/
-.PeinadosImg{
-display: flex;
-flex-direction:row;
-align-items: center;
-justify-content: center;
-}
-.PeinadosImg img{
-=======
   }
   .productos {
     border-top: solid 2px #1b1b1a;
@@ -641,7 +331,6 @@ justify-content: center;
     border-right: solid 20px #7caa9b;
   }
   .PeinadosImg img {
->>>>>>> Stashed changes
     width: 400px;
     height: 400px;
   }
@@ -688,27 +377,4 @@ justify-content: center;
   }
 }
 
-<<<<<<< Updated upstream
-/*AGENDA*/
-.agenda{
-border-top: solid 2px  #1b1b1a;
-}
-.agenda fieldset{
-width: 450px;
-}
-.agenda div{
-display: flex;
-flex-direction: row;
-align-items: center;
-background-color: #bf9780;
-color: black;
-border-left: 20px solid black;
-border-right: 20px solid black;
-padding: 5px;
-width: 450px;
-height: 40px;
-}
-}
-=======
 /*# sourceMappingURL=estilo.css.map */
->>>>>>> Stashed changes
