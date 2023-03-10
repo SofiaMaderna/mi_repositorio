@@ -1,0 +1,47 @@
+$color_1: black;
+$color_2: white;
+$color_3: aliceblue;
+$font-family_1: 'Cabin', sans-serif;
+$background-color_1: #faf1D6;
+$background-color_2: #7caa9b;
+$background-color_3: #bf9780;
+$background-color_4: #a68069;
+$background-color_5: #1b1b1a;
+$background-color_6: #d8af97;
+$background-color_7: white;
+
+.nosotras{
+    	.historia{
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	justify-content: space-around;
+        	border: solid $background-color_2 20px;
+        	background-color: #1b1b1a;
+        	p{
+            	width: 100%;
+            	background-color: $background-color_2;
+	        	color: $color_1;
+	        	font-size: x-large;
+            	font-weight: 700;
+            	padding: 20px;
+                margin-bottom: 0px;
+        	}
+		}
+		.historia1{
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: solid $background-color_4 20px;
+        background-color: #1b1b1a;
+			p{
+            	width: 100%;
+            	background-color: $background-color_4;
+	        	color: $color_1;
+	        	font-size: x-large;
+            	font-weight: 700;
+            	padding: 20px;
+        	}
+		}
+}

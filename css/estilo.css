@@ -84,6 +84,28 @@ body h2 {
   width: auto;
 }
 
+.productos img {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.grilla div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  color: black;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+.grilla div figcaption {
+  background-color: #1b1b1a;
+  width: 450px;
+  color: white;
+}
+
 .Servicios h2 {
   text-align: center;
   background-color: #bf9780;
@@ -122,6 +144,40 @@ body h2 {
 }
 .PeinadosImg img {
   width: 70%;
+}
+
+.nosotras .historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: solid #7caa9b 20px;
+  background-color: #1b1b1a;
+}
+.nosotras .historia p {
+  width: 100%;
+  background-color: #7caa9b;
+  color: black;
+  font-size: x-large;
+  font-weight: 700;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.nosotras .historia1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: solid #a68069 20px;
+  background-color: #1b1b1a;
+}
+.nosotras .historia1 p {
+  width: 100%;
+  background-color: #a68069;
+  color: black;
+  font-size: x-large;
+  font-weight: 700;
+  padding: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -345,6 +401,40 @@ body h2 {
     padding: 5px;
     width: 450px;
     height: 40px;
+  }
+  .nosotras .historia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: solid #7caa9b 20px;
+    background-color: #1b1b1a;
+  }
+  .nosotras .historia p {
+    width: 50%;
+    background-color: #7caa9b;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .nosotras .historia1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: solid #a68069 20px;
+    background-color: #1b1b1a;
+  }
+  .nosotras .historia1 p {
+    width: 50%;
+    background-color: #a68069;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 5px;
   }
 }
 
