@@ -52,9 +52,9 @@ body h2 {
 .novedades div {
   height: 100%;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-direction: column-reverse;
   background-color: #bf9780;
   text-align: left;
   border: solid 5px black;
@@ -92,9 +92,9 @@ body h2 {
 
 .grilla div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-direction: column;
   text-align: justify;
   color: black;
   padding-bottom: 20px;
@@ -117,6 +117,8 @@ body h2 {
 
 .Servicios1 {
   display: flex;
+  align-content: center;
+  justify-content: center;
   flex-direction: row;
   padding-bottom: solid 20px #1b1b1a;
   border: solid 20px #1b1b1a;
@@ -148,9 +150,9 @@ body h2 {
 
 .nosotras .historia {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
+  flex-direction: column;
   border: solid #7caa9b 20px;
   background-color: #1b1b1a;
 }
@@ -165,9 +167,9 @@ body h2 {
 }
 .nosotras .historia1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
+  flex-direction: column;
   border: solid #a68069 20px;
   background-color: #1b1b1a;
 }

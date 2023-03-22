@@ -23,19 +23,15 @@ $background-color_7: white;
     }
 }
 .Servicios1{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: solid 20px $background-color_5 ;
+    @include flex(center, center, row);
+    padding-bottom: solid 20px $background-color_5;
     border: solid 20px $background-color_5;
     div{
         width: 50%;
         height: auto;
-        display: flex;
+        @include flex(center, center, column);
 		list-style-type: none;
-		flex-direction: column;
-		align-items: center;
         text-align: center;
-        justify-content: center;
 		background-color: $background-color_5;
 		color: $background-color_1;
 	}

@@ -1,3 +1,4 @@
+
 $color_1: black;
 $color_2: white;
 $color_3: aliceblue;
@@ -24,10 +25,7 @@ $background-color_7: white;
 			width: 450px;
 			color: $color_2;
 		}
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include flex(center, center, column);
 		text-align: justify;
 		color: $color_1;
 		padding-bottom: 20px;

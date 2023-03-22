@@ -1,0 +1,242 @@
+$color_1: black;
+$color_2: white;
+$color_3: aliceblue;
+$font-family_1: 'Cabin', sans-serif;
+$background-color_1: #faf1D6;
+$background-color_2: #7caa9b;
+$background-color_3: #bf9780;
+$background-color_4: #a68069;
+$background-color_5: #1b1b1a;
+$background-color_6: #d8af97;
+$background-color_7: white;
+
+@media screen and (min-width:992px) {
+
+	header {
+		background-color: $background-color_5;
+		color: $color_3;
+		padding: 0px 10px 0px 0px;
+		border-bottom: solid 4px white;
+		width: auto;
+	}
+	.logobarra {
+		height: 70px;
+		width: 170px;
+	}
+	.logoface {
+		height: 32px;
+		width: 32px;
+	}
+	.logoinsta {
+		height: 39px;
+		width: 39px;
+	}
+	nav {
+		ul {
+            @include flex(center, space-around, row);
+			width: auto;
+		}
+	}
+	ul {
+		li {
+			list-style-type: none;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $color_3;
+	}
+	.imagenIni {
+		grid-area: imagenIni;
+		height: 100%;
+		width: 100%;
+		img {
+			height: 100%;
+			width: 96%;
+		}
+	}
+	.novedades {
+		grid-area: novedades;
+		text-align: center;
+		height: auto;
+		h2 {
+			background-color: $background-color_2;
+			color: $color_2;
+			border: 5px solid black;
+			padding: 5px;
+		}
+		div {
+			h3 {
+				color: $color_1;
+			}
+			height: auto;
+            @include flex(center, center, row);
+			background-color: $background-color_3;
+			text-align: center;
+			border: solid 5px black;
+			padding-left: 5px;
+			p {
+				color: $color_1;
+				font-weight: bolder;
+				font-weight: 800;
+				font-size: larger;
+			}
+		}
+		img {
+			width: 55%;
+			height: 100%;
+		}
+	}
+	.sugerencias {
+		grid-area: sugerencias;
+		padding-bottom: 20px;
+		height: auto;
+        @include flex(center, center, column);
+		h2 {
+			color: $color_2;
+			text-align: center;
+			background-color: $background-color_4;
+			padding: 20px;
+			border: solid $background-color_5 10px;
+		}
+	}
+	.sugerencias1 {
+		width: 100%;
+        @include flex(center, space-around, row);
+		background-color: $background-color_6;
+		border: 10px solid $background-color_5;
+	}
+	.sugerenciasTitulo {
+		width: 100%;
+	}
+	.carousel-item-tips {
+		border: 15px solid whitesmoke;
+		img {
+			height: 500px;
+		}
+	}
+	.carril {
+		grid-area: carril;
+	}
+	.inicio {
+		height: auto;
+		display: grid;
+		grid-template-areas: "carril carril" "imagenIni novedades" "sugerencias sugerencias";
+		grid-template-columns: 45% auto;
+		grid-template-rows: 1fr auto auto;
+	}
+	.nosotras {
+		border-top: solid 2px #1b1b1a;
+	}
+	.grilla {
+		div {
+			&:hover {
+				figcaption {
+					display: block;
+				}
+			}
+			figcaption {
+				display: none;
+				position: absolute;
+				top: 40%;
+				text-align: center;
+				background-color: $background-color_7;
+				color: $color_1;
+				width: 80%;
+			}
+			height: 100%;
+			width: 100%;
+            @include flex(center, flex-start, column);
+			position: relative;
+			text-align: center;
+		}
+		height: auto;
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 25% 25% 25% auto;
+		gap: 10px;
+		padding-bottom: solid 10px;
+		section {
+			font-weight: bold;
+		}
+	}
+	.productos {
+		border-top: solid 2px #1b1b1a;
+		height: auto;
+		img {
+			height: 330px;
+			width: 330px;
+			border-radius: 10px;
+		}
+	}
+	.imagen {
+		&:hover {
+			filter: opacity(.4);
+		}
+	}
+	.PeinadosImg {
+        @include flex(center, center, row);
+        border-left: solid 20px $background-color_2;
+        border-right: solid 20px $background-color_2;
+		img {
+			width: 400px;
+			height: 400px;
+		}
+	}
+	.Servicios {
+		border-top: solid 2px #1b1b1a;
+		border-bottom: 10px solid #faf1D6;
+		h2 {
+			text-align: center;
+			background-color: $background-color_5;
+			color: $color_2;
+            border: solid 20px $background-color_2;
+		}
+	}
+	.Servicios1 {
+		list-style-type: none;
+        @include flex(baseline, space-evenly, row);
+		background-color: $background-color_5;
+		color: $color_2;
+		padding: 30px 30px 30px 30px;
+		border: 10px solid #7caa9b;
+        border-left: 20px solid $background-color_2;
+        border-right: solid 20px $background-color_2;
+	}
+	.agenda {
+		border-top: solid 2px #1b1b1a;
+		fieldset {
+			width: 450px;
+		}
+		div {
+            @include flex(center,center,row);
+			background-color: $background-color_3;
+			color: $color_1;
+			border-left: 20px solid black;
+			border-right: 20px solid black;
+			padding: 5px;
+			width: 450px;
+			height: 40px;
+		}
+	}
+	.nosotras{
+    	.historia{
+            @include flex(center, space-around, row);
+        	border: solid $background-color_2 20px;
+        	background-color: #1b1b1a;
+        	p{
+                background-color: $background-color_2;
+                @extend .historiaMedia;
+        	}
+		}
+		.historia1{
+        @include flex(center,space-around, row);
+        border: solid $background-color_4 20px;
+        background-color: #1b1b1a;
+			p{
+                background-color: $background-color_4;
+            	@extend .historiaMedia;
+        	}
+		}
+    }
+}
