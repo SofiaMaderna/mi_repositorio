@@ -52,7 +52,7 @@ body h2 {
 .novedades div {
   height: 100%;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
   background-color: #bf9780;
@@ -92,7 +92,7 @@ body h2 {
 
 .grilla div {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: justify;
@@ -117,7 +117,7 @@ body h2 {
 
 .Servicios1 {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
   padding-bottom: solid 20px #1b1b1a;
@@ -127,11 +127,11 @@ body h2 {
   width: 50%;
   height: auto;
   display: flex;
-  list-style-type: none;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
   background-color: #1b1b1a;
   color: #faf1D6;
 }
@@ -148,41 +148,46 @@ body h2 {
   width: 70%;
 }
 
-.nosotras .historia {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: column;
-  border: solid #7caa9b 20px;
-  background-color: #1b1b1a;
-}
-.nosotras .historia p {
+.nosotras .historiaEstilo, .nosotras .historia1 p, .nosotras .historia p {
   width: 100%;
-  background-color: #7caa9b;
   color: black;
   font-size: x-large;
   font-weight: 700;
   padding: 20px;
   margin-bottom: 0px;
 }
+.nosotras .historia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: solid #7caa9b 20px;
+  background-color: #1b1b1a;
+}
+.nosotras .historia p {
+  background-color: #7caa9b;
+}
 .nosotras .historia1 {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-around;
   flex-direction: column;
   border: solid #a68069 20px;
   background-color: #1b1b1a;
 }
 .nosotras .historia1 p {
-  width: 100%;
   background-color: #a68069;
-  color: black;
-  font-size: x-large;
-  font-weight: 700;
-  padding: 20px;
 }
 
 @media screen and (min-width: 992px) {
+  .historiaMedia, .nosotras .historia1 p, .nosotras .historia p {
+    width: 50%;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 5px;
+  }
   header {
     background-color: #1b1b1a;
     color: aliceblue;
@@ -204,9 +209,9 @@ body h2 {
   }
   nav ul {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
     width: auto;
   }
   ul li {
@@ -265,8 +270,9 @@ body h2 {
     padding-bottom: 20px;
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .sugerencias h2 {
     color: white;
@@ -278,9 +284,9 @@ body h2 {
   .sugerencias1 {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: #d8af97;
     border: 10px solid #1b1b1a;
   }
@@ -318,10 +324,10 @@ body h2 {
     height: 100%;
     width: 100%;
     display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
     text-align: center;
   }
   .grilla div:hover figcaption {
@@ -353,9 +359,9 @@ body h2 {
   }
   .PeinadosImg {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     border-left: solid 20px #7caa9b;
     border-right: solid 20px #7caa9b;
   }
@@ -376,9 +382,9 @@ body h2 {
   .Servicios1 {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
     align-items: baseline;
     justify-content: space-evenly;
+    flex-direction: row;
     background-color: #1b1b1a;
     color: white;
     padding: 30px 30px 30px 30px;
@@ -394,8 +400,9 @@ body h2 {
   }
   .agenda div {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: #bf9780;
     color: black;
     border-left: 20px solid black;
@@ -406,37 +413,25 @@ body h2 {
   }
   .nosotras .historia {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
     border: solid #7caa9b 20px;
     background-color: #1b1b1a;
   }
   .nosotras .historia p {
-    width: 50%;
     background-color: #7caa9b;
-    color: black;
-    font-size: x-large;
-    font-weight: 700;
-    padding: 20px;
-    border-radius: 5px;
   }
   .nosotras .historia1 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
     border: solid #a68069 20px;
     background-color: #1b1b1a;
   }
   .nosotras .historia1 p {
-    width: 50%;
     background-color: #a68069;
-    color: black;
-    font-size: x-large;
-    font-weight: 700;
-    padding: 20px;
-    border-radius: 5px;
   }
 }
 

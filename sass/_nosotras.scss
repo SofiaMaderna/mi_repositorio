@@ -11,13 +11,23 @@ $background-color_6: #d8af97;
 $background-color_7: white;
 
 .nosotras{
+	// extends
+	.historiaEstilo{
+    width: 100%;
+	color: $color_1;
+	font-size: x-large;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+// fin extends
     	.historia{
 			@include flex(center, space-around, column);
         	border: solid $background-color_2 20px;
         	background-color: #1b1b1a;
         	p{
             	background-color: $background-color_2;
-	        	@extend .historiaStilo;
+	        	@extend .historiaEstilo;
         	}
 		}
 		.historia1{
@@ -26,7 +36,7 @@ $background-color_7: white;
         background-color: #1b1b1a;
 			p{
             	background-color: $background-color_4;
-	        	@extend .historiaStilo;
+	        	@extend .historiaEstilo;
         	}
 		}
 }

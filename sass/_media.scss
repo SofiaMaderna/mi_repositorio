@@ -11,6 +11,15 @@ $background-color_6: #d8af97;
 $background-color_7: white;
 
 @media screen and (min-width:992px) {
+.historiaMedia{
+    width: 50%;
+	color: $color_1;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 20px;
+	border-radius: 5px;
+}
+// fin extends
 
 	header {
 		background-color: $background-color_5;
@@ -70,7 +79,10 @@ $background-color_7: white;
 				color: $color_1;
 			}
 			height: auto;
-            @include flex(center, center, row);
+            display: flex;
+			flex-direction: row;
+    		align-items: center;
+    		justify-content: center;
 			background-color: $background-color_3;
 			text-align: center;
 			border: solid 5px black;
