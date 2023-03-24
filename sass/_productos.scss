@@ -13,8 +13,8 @@ $background-color_7: white;
 
 .productos {
 	img {
-		height: 400px;
-		width: 400px;
+		height: 70%;
+		width: 80%;
 		border-radius: 10px;
 	}
 }
@@ -24,6 +24,7 @@ $background-color_7: white;
 			background-color: $background-color_5;
 			width: 450px;
 			color: $color_2;
+			width: auto
 		}
 		@include flex(center, center, column);
 		text-align: justify;
